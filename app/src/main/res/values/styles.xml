@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.txtinfo" parent="AppTheme">
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginStart">43dp</item>
+        <item name="android:layout_marginEnd">44dp</item>
+    </style>
+
+    <style name="AppTheme.txtdescription" parent="AppTheme">
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_width">116dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginStart">43dp</item>
+        <item name="android:layout_marginEnd">252dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+    <style name="AppTheme.edit_txt" parent="AppTheme">
+        <item name="android:textColorHint">@color/color_grey</item>
+        <item name="android:textColor">@color/color_grey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/input_radius</item>
+        <item name="android:layout_width">325dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_marginEnd">44dp</item>
+    </style>
+
+
+    <style name="AppTheme.spinner" parent="AppTheme">
+        <item name="android:background">@drawable/input_radius_spinner</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">325dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginEnd">44dp</item>
+    </style>
+
+
+
+</resources>

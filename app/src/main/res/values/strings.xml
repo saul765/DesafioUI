@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Resources2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bitlab_home_text">Nos encanta que quieras aplicar a nuestras becas, pero antes de todo necesitamos conocerte más.</string>
+    <string name="bitlab_home_name">Nombre completo:</string>
+    <string name="bitlab_home_email">Correo electrónico:</string>
+    <string name="bitlab_home_telephone">Número telefónico:</string>
+    <string name="bitlab_home_question">Cómo te enteraste de Bitlab?</string>
+    <string name="bitlab_home_send">Enviar</string>
+    <string name="bitlab_home_spinner_text">[Select an Option …]</string>
+
+    <!-- Error messages -->
+<string name="bitlab_home_name_error">Your name can\'t be empty</string>
+    <string name="bitlab_home_email_error">Your email can\'t be empty</string>
+
+    <!-- Bitlab home PlaceHolders -->
+    <string name="bitlab_home_name_placeholder">Ingrese su nombre completo</string>
+    <string name="bitlab_home_email_placeholder">Ingrese su correo electrónico</string>
+    <string name="bitlab_home_telephone_placeholder">Ingrese su número telefónico</string>
+
+
+
+    <string name="bitlab_result_text">Tus datos han sido enviados con éxito</string>
+
+    <string-array name="string_array_name">
+        <item>[Select an Option …]</item>
+        <item>Por redes sociales</item>
+        <item>Un amigo me sugirió</item>
+        <item>Otro</item>
+
+    </string-array>
+
+</resources>
