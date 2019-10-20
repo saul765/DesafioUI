@@ -52,8 +52,6 @@ class BitlabHomeFragment : Fragment() {
         spinner?.prompt="Select an Option"
 
 
-
-
         ArrayAdapter.createFromResource(
             context!!,
             R.array.string_array_name,
@@ -68,19 +66,32 @@ class BitlabHomeFragment : Fragment() {
         }
         view.button.setOnClickListener {
 
+            var validationFlag=true
+
             if (name_edit_txt.text.isEmpty()){
                 name_edit_txt.error = getString(R.string.bitlab_home_name_error)
-              if (email_edit_txt.text.isEmpty()){
-                  email_edit_txt.error = getString(R.string.bitlab_home_email_error)
-              }
+                validationFlag=false
+
+            }
+            if (email_edit_txt.text.isEmpty()){
+                    email_edit_txt.error = getString(R.string.bitlab_home_email_error)
+                validationFlag=false
+                }
+
+            if(validationFlag){
+
+                listenerBitlabHome?.onSendClickListener()
+            }else{
                 Snackbar.make(it, "Some fields are required", Snackbar.LENGTH_LONG)
                     .setAction("OK", {  }).show()
-            }else {
-                listenerBitlabHome?.onSendClickListener()
+
             }
 
 
-        }
+            }
+
+
+
 
         return view
     }
