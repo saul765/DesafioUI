@@ -3,9 +3,19 @@
     <color name="colorPrimary">#0F0F0F</color>
     <color name="colorPrimaryDark">#41414E</color>
     <color name="colorAccent">#D81B60</color>
+
+
+    <!-- FRAGMENT FORM XML COLORS -->
     <color name="bitlab_purple1">#5b0daf</color>
     <color name="bitlab_purple2">#6b25b6</color>
     <color name="color_white">#F9F9F9</color>
     <color name="color_grey">#AFAAAA</color>
+
+
+    <!-- FRAGMENT COLLECTION VIEW COLORS -->
+
+
+    <color name="fragment_collection_color_grey">#aa83d4</color>
+    <color name="fragment_collection_color_white">#e9e1f2</color>
 
 </resources>

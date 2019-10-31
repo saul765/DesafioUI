@@ -1,29 +1,44 @@
 <resources>
-    <string name="app_name">Resources2</string>
+    <string name="app_name">Desafio Saul</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="two_format_string">%1$s %2$s</string>
+
+    <!-- Fragment Collection View XML UI strings-->
+    <string name="collection_view_fragment_new_registry"><u>Agregar nuevo registro</u></string>
+
+
+
+    <!-- Fragment Form XML UI strings-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="bitlab_home_text">Nos encanta que quieras aplicar a nuestras becas, pero antes de todo necesitamos conocerte más.</string>
-    <string name="bitlab_home_name">Nombre completo:</string>
-    <string name="bitlab_home_email">Correo electrónico:</string>
-    <string name="bitlab_home_telephone">Número telefónico:</string>
-    <string name="bitlab_home_question">Cómo te enteraste de Bitlab?</string>
-    <string name="bitlab_home_send">Enviar</string>
-    <string name="bitlab_home_spinner_text">[Select an Option …]</string>
+    <string name="form_fragment_text">Nos encanta que quieras aplicar a nuestras becas, pero antes de todo necesitamos conocerte más.</string>
+    <string name="form_fragment_name">Nombre completo:</string>
+    <string name="form_fragment_email">Correo electrónico:</string>
+    <string name="form_fragment_telephone">Número telefónico:</string>
+    <string name="form_fragment_question">Cómo te enteraste de Bitlab?</string>
+    <string name="form_fragment_send">Enviar</string>
+    <string name="form_fragment_see_collection"><u>Ver colleción</u></string>
+    <string name="form_fragment_spinner_text">[Select an Option …]</string>
+    <string name="form_fragment_image_content_description">Esta es una imgagen del logo de bitlab</string>
 
-    <!-- Error messages -->
-<string name="bitlab_home_name_error">Your name can\'t be empty</string>
-    <string name="bitlab_home_email_error">Your email can\'t be empty</string>
+    <!-- Fragment Form XML UI Error messages -->
+    <string name="form_fragment_name_error">Your name can\'t be empty</string>
+    <string name="form_fragment_email_error">Your email can\'t be empty</string>
 
-    <!-- Bitlab home PlaceHolders -->
-    <string name="bitlab_home_name_placeholder">Ingrese su nombre completo</string>
-    <string name="bitlab_home_email_placeholder">Ingrese su correo electrónico</string>
-    <string name="bitlab_home_telephone_placeholder">Ingrese su número telefónico</string>
+    <!-- Fragment Form XML UI  PlaceHolders -->
+    <string name="form_fragment_placeholder">Ingrese su nombre completo</string>
+    <string name="form_fragment_email_placeholder">Ingrese su correo electrónico</string>
+    <string name="form_fragment_telephone_placeholder">Ingrese su número telefónico</string>
+
+
+    <!-- Fragment Collection View XML UI strings-->
+    <string name="collection_view_text">Tus datos han sido enviados con éxito</string>
+    <string name="collection_view_found_by">Me enteré por</string>
+    <string name="collection_view_john_doe_name">John Doe</string>
+    <string name="collection_view_john_doe_email">john.doe.gmail.com</string>
 
 
 
-    <string name="bitlab_result_text">Tus datos han sido enviados con éxito</string>
-
+    <!-- Fragment Form XML UI Spinner Array -->
     <string-array name="string_array_name">
         <item>[Select an Option …]</item>
         <item>Por redes sociales</item>

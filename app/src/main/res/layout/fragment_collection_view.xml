@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+        android:background="@color/bitlab_purple1"
+             tools:context=".collectionViewComponents.CollectionViewFragment">
+
+
+    <TextView
+            android:id="@+id/txt_add_new_registry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="220dp"
+            android:text="@string/collection_view_fragment_new_registry"
+            android:textAlignment="center"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerview_collection_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_collection_view"
+            android:layout_width="409dp"
+            android:layout_height="600dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_add_new_registry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

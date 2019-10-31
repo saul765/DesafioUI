@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.txtinfo" parent="AppTheme">
+    <style name="AppTheme.txt_info" parent="AppTheme">
         <item name="android:paddingStart">15dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">14sp</item>
@@ -16,7 +16,7 @@
         <item name="android:layout_marginEnd">44dp</item>
     </style>
 
-    <style name="AppTheme.txtdescription" parent="AppTheme">
+    <style name="AppTheme.txt_description" parent="AppTheme">
 
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">14sp</item>
@@ -50,6 +50,27 @@
         <item name="android:layout_height">42dp</item>
         <item name="android:layout_marginStart">42dp</item>
         <item name="android:layout_marginEnd">44dp</item>
+    </style>
+
+
+    <!-- FRAGMENT COLLECTION LIST VIEW CARDVIEW XML STYLES-->
+    <style name="AppTheme.txt_main_fields" parent="AppTheme">
+
+        <item name="android:textColor">@color/fragment_collection_color_grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">325dp</item>
+        <item name="android:layout_height">42dp</item>
+
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="AppTheme.txt_secondary_fields" parent="AppTheme">
+
+        <item name="android:textColor">@color/fragment_collection_color_white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">153dp</item>
+        <item name="android:layout_height">19dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
     </style>
 
 

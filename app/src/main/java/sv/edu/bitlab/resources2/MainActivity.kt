@@ -1,53 +1,92 @@
 package sv.edu.bitlab.resources2
 
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.util.Log
+import androidx.fragment.app.Fragment
+import sv.edu.bitlab.resources2.collectionViewComponents.CollectionViewFragment
+import sv.edu.bitlab.resources2.interfaces.OnFragmentInteractionListener
 
-class MainActivity : AppCompatActivity(),BitlabHomeFragment.OnBitlabHomeFragmentInteractionListener,BitlabResultFragment.OnBitlabResultFragmentInteractionListener {
-    override fun onFragmentInteraction(uri: Uri) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+class MainActivity : AppCompatActivity(),OnFragmentInteractionListener{
 
-    override fun onSendClickInteraction() {
-        val fragment = BitlabResultFragment.newInstance()
 
-        val builder = supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragment_container, fragment, TAG2)
-         .addToBackStack(TAG2)
-        builder.commitAllowingStateLoss()
-    }
-
-    override fun onSendClickListener() {
-
-        val fragment = BitlabResultFragment.newInstance()
-
-        val builder = supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragment_container, fragment, TAG)
-        .addToBackStack(TAG)
-        builder.commitAllowingStateLoss()
-
-    }
-
+    private var listener:OnFragmentInteractionListener?=null
+    val handler = Handler()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        listener=this
+        init()
 
-        val fragment = BitlabHomeFragment.newInstance()
+
+
+    }
+
+    fun init(){
+
+        val fragment = FormFragment.newInstance()
 
         val builder = supportFragmentManager
             .beginTransaction()
             .replace(R.id.fragment_container, fragment, TAG)
-        // .addToBackStack(MainActivity.FRAGMENT_TAG4)
-        builder.commitAllowingStateLoss()
+
+        builder.commit()
+
+    }
+
+    override fun onFragmentInteraction(index: FragmentsIndex) {
+
+
+        val transaction = supportFragmentManager.beginTransaction()
+        var fragment:Fragment?= null
+
+        when(index){
+
+            FragmentsIndex.KEY_FRAGMENT_FORM->{
+
+                fragment= FormFragment.newInstance()
+                transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out,
+                    android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .addToBackStack(TAG)
+
+
+
+
+            }
+
+            FragmentsIndex.KEY_FRAGMENT_COLLECTION_VIEW->{
+
+                fragment= CollectionViewFragment.newInstance()
+                transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out,
+                    android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .addToBackStack(TAG2)
+
+            }
+
+
+        }
+        transaction
+            .replace(R.id.fragment_container,fragment)
+            .commit()
 
 
     }
+
+    override fun successData() {
+        Log.d("SUCCED DATA LISTENER","SUCCESDATA LISTENER")
+        handler.postDelayed({
+            this.runOnUiThread {
+                Log.d("handler","after 3 seconds")
+                listener?.onFragmentInteraction(FragmentsIndex.KEY_FRAGMENT_COLLECTION_VIEW)
+
+            }
+        }, THREE_SECONDS)
+    }
+
 }
 
 
