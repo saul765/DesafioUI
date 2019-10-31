@@ -15,8 +15,7 @@ class CollectionViewHolder(itemView: View, val listener: ReservationItemListener
     var email_txt: TextView? =null
     var telephopne_txt: TextView?=null
     var found_by_txt:TextView? =null
-    var round_txt:TextView?=null
-    var schedule_txt:TextView?=null
+
     var imageView:CircleImageView?=null
     var container:View?=null
 
@@ -35,11 +34,7 @@ class CollectionViewHolder(itemView: View, val listener: ReservationItemListener
 
 
 
-        container?.setOnClickListener{
 
-            listener.onItemClickReservation(this.adapterPosition)
-
-        }
         
     }
 
